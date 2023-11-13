@@ -3,7 +3,7 @@ import { NavContainer, ItemLink, NavWrapper, Nav, NavItem } from "./styles"
 
 const Navbar = () => {
   return (
-    <NavContainer background="#13131A" >
+    <NavContainer background="#023E8A" >
       <NavWrapper>
         <ItemLink href={'/'}><FaAirbnb size={32} color="#FFF" /></ItemLink> 
          <Nav>
