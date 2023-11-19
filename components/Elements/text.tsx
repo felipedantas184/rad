@@ -6,19 +6,21 @@ interface Props {
 
 
 export const Herotitle = styled.h1`
-  color: #13131A;
-  font-size: 32px;
+  color: #000;
+  font-size: 40px;
   font-weight: 700;
-  text-transform: capitalize;
+
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
 `
 export const Herosubtitle = styled.h3`
   color: #13131A;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
-  text-transform: capitalize;
 
   @media screen and (max-width: 768px) {
-    font-size: 18px;
+    font-size: 16px;
   }
 `
 export const Title = styled.h1`
@@ -31,9 +33,9 @@ export const Title = styled.h1`
   }
 `
 export const Paragraph = styled.p`
-  color: #13131A;
+  color: #44444A;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.3;
 
   @media screen and (max-width: 768px) {

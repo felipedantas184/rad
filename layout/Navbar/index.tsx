@@ -1,16 +1,20 @@
-import { FaAirbnb, FaBars, FaShoppingBag } from 'react-icons/fa'
-import { NavContainer, ItemLink, NavWrapper, Nav, NavItem } from "./styles"
+import { NavContainer, NavWrapper, Nav, NavItem, LogoWrapper } from "./styles"
+import { Button } from '@/components/Elements/buttons';
+import Image from 'next/image';
 
 const Navbar = () => {
   return (
     <NavContainer background="#023E8A" >
       <NavWrapper>
-        <ItemLink href={'/'}><FaAirbnb size={32} color="#FFF" /></ItemLink> 
-         <Nav>
-          <NavItem href={'/'} >Home</NavItem>
-          <NavItem href={'/'} >Contact</NavItem>
-          <NavItem href={'/'} >Login</NavItem>
+        <LogoWrapper>
+          <Image src={'/images/logo-rad.png'} alt={'RAD Consultoria Aeronáutica'} fill className={'image'} />
+        </LogoWrapper>
+        <Nav>
+          <NavItem href={'/'} >Aeródromos</NavItem>
+          <NavItem href={'/'} >Helipontos</NavItem>
+          <NavItem href={'/'} >Transferências</NavItem>
         </Nav>
+        <Button style={{ paddingLeft: 24, paddingRight: 24, paddingBottom: 8, paddingTop: 8 }}>Contato</Button>
         {/**
           <FaBars size={24} color="#E1E1E1" /> 
          */}

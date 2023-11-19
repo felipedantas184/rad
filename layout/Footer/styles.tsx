@@ -12,3 +12,13 @@ export const Item = styled(Link)`
   font-size: 14px;
   font-weight: 500;
 `
+export const LogoWrapper = styled.div`
+  position: relative;
+	width: 105px;
+	height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+`

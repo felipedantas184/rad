@@ -1,6 +1,6 @@
 import styled from "styled-components";
 interface ButtonProps {
-  theme: string
+  theme?: string,
 }
 
 export const Button = styled.button<ButtonProps>`
@@ -20,16 +20,54 @@ export const Button = styled.button<ButtonProps>`
   justify-content: center;
   line-height: 1.25;
   margin: 0;
-  min-height: 3rem;
-  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  padding: 12px 12px;
   position: relative;
   text-decoration: none;
-  transition: all 500MS;
+  transition: all 500ms;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: baseline;
   width: auto;
+
+  &:hover, &:focus {
+    background-color: #13131A;
+    color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  }
+
+  &:active {
+    background-color: #13113A;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 15px;
+  }
+`
+export const WppButton = styled.a`
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+
+  background-color: #1cac51;
+  color: #F6F6F6;
+  border-radius: 16px;
+  padding: 12px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 12px;
+
+  text-decoration: none;
+  transition: all 500ms;
+  user-select: none;
+  -webkit-user-select: none;
 
   &:hover, &:focus {
     background-color: #13131A;

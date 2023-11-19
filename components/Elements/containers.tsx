@@ -66,10 +66,10 @@ export const ImageWrapper = styled.div`
     width: 100% !important;
     position: relative !important;
     height: unset !important;
+    transition: transform 0.5s ease-in-out;
 
     &:hover {
       transform: scale(1.1);
-      transition: transform 0.5s ease-in-out;
     }
   }
 `
@@ -79,4 +79,6 @@ export const ButtonWrapper = styled.div`
   align-items: center;
   justify-content: flex-start;
   gap: 16px;
+
+  margin-top: 16px;
 `

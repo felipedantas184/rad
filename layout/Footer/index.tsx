@@ -1,15 +1,24 @@
 import { Container, FlexRowSB } from '@/components/Elements/containers';
-import { FaAirbnb } from 'react-icons/fa'
-import { Item, Menu } from "./styles";
+import { Item, LogoWrapper, Menu } from "./styles";
+import Image from 'next/image';
+import { FaFacebook, FaInstagram, FaMailBulk } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <Container background='#13131A' >
-      <FlexRowSB style={{paddingLeft: 16, paddingRight: 16}} >
-        <FaAirbnb size={24} color="#E1E1E1" />
+    <Container background='#000000' style={{padding: 16}} >
+      <FlexRowSB style={{maxWidth: 1080, marginLeft: 'auto', marginRight: 'auto'}} >
+        <LogoWrapper>
+          <Image src={'/images/logo-rad.png'} alt={'RAD Consultoria Aeronáutica'} fill className={'image'} />
+        </LogoWrapper>
         <Menu>
-          <Item href={'/'}>Home</Item>
-          <Item href={'/'}>Contact</Item>
+          <Item href={'/'}>Aeródromos</Item>
+          <Item href={'/'}>Helipontos</Item>
+          <Item href={'/'}>Transferências</Item>
+        </Menu>
+        <Menu>
+          <a target='_blank' href='/' ><FaInstagram size={24} color={'#F6F6F6'}/></a>
+          <a target='_blank' href='/' ><FaFacebook size={24} color={'#F6F6F6'}/></a>
+          <a target='_blank' href='/' ><FaMailBulk size={24} color={'#F6F6F6'}/></a>
         </Menu>
       </FlexRowSB>
     </Container>

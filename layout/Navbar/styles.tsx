@@ -21,6 +21,16 @@ export const NavWrapper = styled.div`
 	align-items: center;
 	justify-content: space-between;
 `
+export const LogoWrapper = styled.div`
+  position: relative;
+	width: 105px;
+	height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+`
 export const ItemLink = styled(Link)`
   display: flex;
 	align-items: center;
@@ -33,10 +43,14 @@ export const Nav = styled.nav`
   flex-direction: row;
   align-items: center;
   gap: 32px;
+
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
 `
 export const NavItem = styled(Link)`
   color: #E1E1E1;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
 `
 export const Badge = styled.div`
