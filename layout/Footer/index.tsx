@@ -8,7 +8,7 @@ const Footer = () => {
     <Container background='#000000' style={{padding: 16}} >
       <FlexRowSB style={{maxWidth: 1080, marginLeft: 'auto', marginRight: 'auto'}} >
         <LogoWrapper>
-          <Image src={'/images/logo-rad.png'} alt={'RAD Consultoria Aeronáutica'} fill className={'image'} />
+          <Image src={'/images/logo.png'} alt={'RAD Consultoria Aeronáutica'} fill className={'image'} />
         </LogoWrapper>
         <Menu>
           <Item href={'/'}>Aeródromos</Item>

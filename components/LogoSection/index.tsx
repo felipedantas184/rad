@@ -8,7 +8,7 @@ const LogoSection = () => {
     <Container background="#023E8A" style={{paddingTop: 0, paddingBottom: 0}} >
       <Wrapper>
         <LogoWrapper>
-          <Image src={'/images/logo-rad.png'} alt={'ultraleve'} fill className={'image'} />
+          <Image src={'/images/logo.png'} alt={'ultraleve'} fill className={'image'} />
         </LogoWrapper>
       </Wrapper>
     </Container>

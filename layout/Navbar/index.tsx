@@ -7,7 +7,7 @@ const Navbar = () => {
     <NavContainer background="#023E8A" >
       <NavWrapper>
         <LogoWrapper>
-          <Image src={'/images/logo-rad.png'} alt={'RAD Consultoria Aeronáutica'} fill className={'image'} />
+          <Image src={'/images/logo.png'} alt={'RAD Consultoria Aeronáutica'} fill className={'image'} />
         </LogoWrapper>
         <Nav>
           <NavItem href={'/'} >Aeródromos</NavItem>
