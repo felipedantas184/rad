@@ -3,6 +3,7 @@ import { ButtonWrapper, Container, FlexColumnCenter, Wrapper } from "../Elements
 import { Herosubtitle, Herotitle, Paragraph, Title } from "../Elements/text"
 import { Button } from "../Elements/buttons"
 import { PicWrapper } from "./styles"
+import { Slide } from "react-awesome-reveal"
 
 
 const Interest = () => {
@@ -15,8 +16,10 @@ const Interest = () => {
           <PicWrapper>
             <Image src={'/images/ricardo.png'} alt={'RAD Consultoria Aeronáutica'} fill className={'image'} />
           </PicWrapper>
-          <Title style={{ color: '#F1F1F1', fontSize: 24}}>Ricardo Dantas</Title>
-          <Paragraph style={{ color: '#6D6D6D'}}>Breve resumo aqui</Paragraph>
+          <Slide direction="up" triggerOnce>
+            <Title style={{ color: '#F1F1F1', fontSize: 24}}>Ricardo Dantas</Title>
+            <Paragraph style={{ color: '#6D6D6D'}}>Breve resumo aqui</Paragraph>
+          </Slide>
         </FlexColumnCenter>
       </Wrapper>
     </Container>
