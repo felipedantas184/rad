@@ -20,7 +20,7 @@ const Boxes = () => {
             <Box>
               <BoxTitle><FaHelicopterSymbol size={30} color='#22222A' />Registro de Helipontos</BoxTitle>
               <BoxParagraph>Somos a escolha certa quando se trata da homologação de helipontos. Estamos preparados para guiá-lo em todo o processo de homologação</BoxParagraph>
-              <ScrollButton style={{background: '#02328A', color: '#FFFFFF', alignSelf: 'flex-end', marginTop: 8}} to='heliponto' smooth={true} duration={750} spy={true}>Conhecer Mais</ScrollButton>
+              <ScrollButton style={{background: '#02328A', color: '#FFFFFF', alignSelf: 'flex-end', marginTop: 8}} to='helipontos' smooth={true} duration={750} spy={true}>Conhecer Mais</ScrollButton>
             </Box>
             <Box>
               <BoxTitle><MdOutlineConnectingAirports size={30} color='#22222A' />Transferências</BoxTitle>
