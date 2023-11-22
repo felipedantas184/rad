@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { ButtonWrapper, FlexColumnCenter, FlexRowSB, ImageWrapper, Wrapper } from "../Elements/containers"
 import { Herosubtitle, Herotitle } from "../Elements/text"
-import { Button } from "../Elements/buttons"
+import { Button, ScrollButton } from "../Elements/buttons"
 import { Container } from "./styles"
 
 
@@ -14,8 +14,8 @@ const Hero = () => {
             <Herotitle>Qualidade e Excelência em Serviços Aeronáuticos</Herotitle>
             <Herosubtitle>Nossa equipe altamente especializada e nossa vasta experiência são os pilares que sustentam nossa busca incansável pela excelência</Herosubtitle>
             <ButtonWrapper>
-              <Button theme='blue'>Conhecer Serviços</Button>
-              <Button>Entre em Contato</Button>
+              <Button blue >Entre em Contato</Button>
+              <ScrollButton to='aerodromos' smooth={true} duration={500} spy={true}>Conhecer Serviços</ScrollButton>
             </ButtonWrapper>
           </FlexColumnCenter>
           <FlexColumnCenter style={{ flex: 1}} >

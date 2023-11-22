@@ -30,6 +30,11 @@ export const Box = styled.div`
   gap: 8px;
 
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition: transform 0.5s ease-in-out;
+
+  &:hover {
+    transform: scale(1.01);
+  }
 `
 export const BoxTitle = styled.h4`
   color: #13131A;

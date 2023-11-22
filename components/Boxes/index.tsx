@@ -1,6 +1,6 @@
 import { Container, Wrapper } from "../Elements/containers"
 import { Box, BoxParagraph, BoxTitle, BoxWrapper } from "./styles"
-import { Button } from "../Elements/buttons"
+import { Button, ScrollButton } from "../Elements/buttons"
 import { MdOutlineConnectingAirports } from "react-icons/md";
 import { FaHelicopterSymbol } from "react-icons/fa6";
 import { FaRoad } from "react-icons/fa";
@@ -14,18 +14,18 @@ const Boxes = () => {
           <BoxWrapper>
             <Box>
               <BoxTitle><FaRoad size={30} color='#22222A' />Registro de Aeródromos</BoxTitle>
-              <BoxParagraph>Trabalhamos em estreita colaboração com você, fornecendo orientação especializada e suporte personalizado, desde a preparação da documentação até a coordenação com as autoridades competentes.</BoxParagraph>
-              <Button theme={'blue'} style={{ alignSelf: 'flex-end', marginTop: 8 }}>Conhecer Mais</Button>
+              <BoxParagraph>fornecemos orientação especializada e suporte personalizado, desde a preparação da documentação até a coordenação com as autoridades.</BoxParagraph>
+              <ScrollButton style={{background: '#02328A', color: '#FFFFFF', alignSelf: 'flex-end', marginTop: 8}} to='aerodromos' smooth={true} duration={500} spy={true}>Conhecer Mais</ScrollButton>
             </Box>
             <Box>
               <BoxTitle><FaHelicopterSymbol size={30} color='#22222A' />Registro de Helipontos</BoxTitle>
-              <BoxParagraph>Somos a escolha certa quando se trata da homologação de helipontos. Com um profundo entendimento dos requisitos específicos, estamos preparados para guiá-lo em todo o processo de homologação</BoxParagraph>
-              <Button theme={'blue'} style={{ alignSelf: 'flex-end', marginTop: 8 }}>Conhecer Mais</Button>
+              <BoxParagraph>Somos a escolha certa quando se trata da homologação de helipontos. Estamos preparados para guiá-lo em todo o processo de homologação</BoxParagraph>
+              <ScrollButton style={{background: '#02328A', color: '#FFFFFF', alignSelf: 'flex-end', marginTop: 8}} to='heliponto' smooth={true} duration={750} spy={true}>Conhecer Mais</ScrollButton>
             </Box>
             <Box>
               <BoxTitle><MdOutlineConnectingAirports size={30} color='#22222A' />Transferências</BoxTitle>
-              <BoxParagraph>A transferência de propriedade de aeronaves pode ser um processo complexo, mas a RAD Consultoria Aeronáutica simplifica essa transição para você. Vamos orientá-lo em cada etapa do processo de transferência.</BoxParagraph>
-              <Button theme={'blue'} style={{ alignSelf: 'flex-end', marginTop: 8 }}>Conhecer Mais</Button>
+              <BoxParagraph>A transferência de propriedade de aeronaves pode ser um processo complexo, mas a RAD Consultoria simplifica essa transição para você.</BoxParagraph>
+              <ScrollButton style={{background: '#02328A', color: '#FFFFFF', alignSelf: 'flex-end', marginTop: 8}} to='transferencias' smooth={true} duration={1000} spy={true}>Conhecer Mais</ScrollButton>
             </Box>
           </BoxWrapper>
         </Slide>

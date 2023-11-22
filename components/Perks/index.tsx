@@ -10,7 +10,7 @@ const Perks = () => {
       <Wrapper>
         <PerkWrapper>
           <Perk>
-            <Slide direction="up" triggerOnce>
+            <Slide style={{width: '100%'}} direction="up" triggerOnce>
               <PerksSB style={{ padding: 0, marginBottom: 4 }} >
                 <PerkHero>+20</PerkHero>
                 <FaPlane size={32} color={'#33333A'} />
@@ -20,9 +20,9 @@ const Perks = () => {
             </Slide>
           </Perk>
           <Perk>
-            <Slide direction="up" triggerOnce>
+            <Slide style={{width: '100%'}} direction="up" triggerOnce>
               <PerksSB style={{ padding: 0, marginBottom: 4 }} >
-                <PerkHero>+15</PerkHero>
+                <PerkHero>+05</PerkHero>
                 <FaHelicopter size={32} color={'#33333A'} />
               </PerksSB>
               <PerkTitle>Helipontos Registrados</PerkTitle>
@@ -30,7 +30,7 @@ const Perks = () => {
             </Slide>
           </Perk>
           <Perk>
-            <Slide direction="up" triggerOnce>
+            <Slide style={{width: '100%'}} direction="up" triggerOnce>
               <PerksSB style={{ padding: 0, marginBottom: 4 }} >
                 <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'flex-end', gap: 4 }}>
                   <PerkHero>+10</PerkHero>
